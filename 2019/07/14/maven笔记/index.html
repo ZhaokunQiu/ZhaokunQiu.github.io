@@ -86,7 +86,7 @@
 <meta property="og:site_name" content="父亲写的散文诗">
 <meta property="og:description" content="maven概念maven是基于对象模型，可以通过一小段描述信息来管理项目的构建、报告和文档的软件项目管理工具，提供了仓库的概念，统一管理项目用到的jar包。 maven目录结构12345678src	-main		-java 			-package(自定义的包)	-test		-java			-package(自定义的包)	resources  编译时错误修正Source option 5 is">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-07-15T03:19:08.411Z">
+<meta property="og:updated_time" content="2019-07-15T08:00:53.111Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Maven学习笔记">
 <meta name="twitter:description" content="maven概念maven是基于对象模型，可以通过一小段描述信息来管理项目的构建、报告和文档的软件项目管理工具，提供了仓库的概念，统一管理项目用到的jar包。 maven目录结构12345678src	-main		-java 			-package(自定义的包)	-test		-java			-package(自定义的包)	resources  编译时错误修正Source option 5 is">
@@ -312,11 +312,12 @@
 <h2 id="仓库"><a href="#仓库" class="headerlink" title="仓库"></a>仓库</h2><p>分为本地仓库和远程仓库</p>
 <p>镜像仓库（放置GFW屏蔽）<br>在maven安装目录下的conf/settings.xml中mirror，id、mirrorOf和name可以按需求填，url填国内镜像仓库地址<br>例如 <a href="http://maven.net.cn/content/groups/public" target="_blank" rel="noopener">http://maven.net.cn/content/groups/public</a> </p>
 <p>修改本地仓库也在上述文件中，localRepository属性</p>
-<p>##maven生命周期</p>
-<p>###clean    清理项目<br>pre-clean    执行清理前的工作<br>clean        清理上一次构建生成的所有文件<br>post-clean    执行清理后的文件</p>
-<p>###default    构建项目（最核心）<br>常用：compile test package install</p>
-<p>###site    生成项目站点<br>pre-site    在生成项目站点前要完成的工作<br>site        生成项目的站点文档<br>post-site    在生成项目站点后要完成的工作<br>site-deploy    发布生成的站点到服务器上</p>
-
+<h2 id="maven生命周期"><a href="#maven生命周期" class="headerlink" title="maven生命周期"></a>maven生命周期</h2><h3 id="clean-清理项目"><a href="#clean-清理项目" class="headerlink" title="clean    清理项目"></a>clean    清理项目</h3><p>pre-clean    执行清理前的工作<br>clean        清理上一次构建生成的所有文件<br>post-clean    执行清理后的文件</p>
+<h3 id="default-构建项目（最核心）"><a href="#default-构建项目（最核心）" class="headerlink" title="default    构建项目（最核心）"></a>default    构建项目（最核心）</h3><p>常用：compile test package install</p>
+<h3 id="site-生成项目站点"><a href="#site-生成项目站点" class="headerlink" title="site    生成项目站点"></a>site    生成项目站点</h3><p>pre-site    在生成项目站点前要完成的工作<br>site        生成项目的站点文档<br>post-site    在生成项目站点后要完成的工作<br>site-deploy    发布生成的站点到服务器上</p>
+<h2 id="maven依赖冲突原则"><a href="#maven依赖冲突原则" class="headerlink" title="maven依赖冲突原则"></a>maven依赖冲突原则</h2><h3 id="短路优先"><a href="#短路优先" class="headerlink" title="短路优先"></a>短路优先</h3><p><code>A-&gt;B-&gt;C-&gt;X(jar)
+A-&gt;D-&gt;X(jar)</code><br><code>选择第二种</code></p>
+<h3 id="路径长度相同先声明优先"><a href="#路径长度相同先声明优先" class="headerlink" title="路径长度相同先声明优先"></a>路径长度相同先声明优先</h3>
       
     </div>
     
@@ -462,7 +463,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#maven概念"><span class="nav-number">1.</span> <span class="nav-text">maven概念</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#maven目录结构"><span class="nav-number">2.</span> <span class="nav-text">maven目录结构</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#编译时错误修正"><span class="nav-number">3.</span> <span class="nav-text">编译时错误修正</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Source-option-5-is-no-longer-supported-Use-7-or-later"><span class="nav-number">3.1.</span> <span class="nav-text">Source option 5 is no longer supported. Use 7 or later.</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常用命令"><span class="nav-number">4.</span> <span class="nav-text">常用命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#maven创建目录两种方式"><span class="nav-number">5.</span> <span class="nav-text">maven创建目录两种方式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#仓库"><span class="nav-number">6.</span> <span class="nav-text">仓库</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#maven概念"><span class="nav-number">1.</span> <span class="nav-text">maven概念</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#maven目录结构"><span class="nav-number">2.</span> <span class="nav-text">maven目录结构</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#编译时错误修正"><span class="nav-number">3.</span> <span class="nav-text">编译时错误修正</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Source-option-5-is-no-longer-supported-Use-7-or-later"><span class="nav-number">3.1.</span> <span class="nav-text">Source option 5 is no longer supported. Use 7 or later.</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常用命令"><span class="nav-number">4.</span> <span class="nav-text">常用命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#maven创建目录两种方式"><span class="nav-number">5.</span> <span class="nav-text">maven创建目录两种方式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#仓库"><span class="nav-number">6.</span> <span class="nav-text">仓库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#maven生命周期"><span class="nav-number">7.</span> <span class="nav-text">maven生命周期</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#clean-清理项目"><span class="nav-number">7.1.</span> <span class="nav-text">clean    清理项目</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#default-构建项目（最核心）"><span class="nav-number">7.2.</span> <span class="nav-text">default    构建项目（最核心）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#site-生成项目站点"><span class="nav-number">7.3.</span> <span class="nav-text">site    生成项目站点</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#maven依赖冲突原则"><span class="nav-number">8.</span> <span class="nav-text">maven依赖冲突原则</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#短路优先"><span class="nav-number">8.1.</span> <span class="nav-text">短路优先</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#路径长度相同先声明优先"><span class="nav-number">8.2.</span> <span class="nav-text">路径长度相同先声明优先</span></a></li></ol></li></ol></div>
             
 
           </div>
