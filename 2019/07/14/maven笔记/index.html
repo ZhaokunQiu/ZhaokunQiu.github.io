@@ -86,7 +86,7 @@
 <meta property="og:site_name" content="父亲写的散文诗">
 <meta property="og:description" content="maven概念maven是基于对象模型，可以通过一小段描述信息来管理项目的构建、报告和文档的软件项目管理工具，提供了仓库的概念，统一管理项目用到的jar包。 maven目录结构12345678src	-main		-java 			-package(自定义的包)	-test		-java			-package(自定义的包)	resources  编译时错误修正Source option 5 is">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-07-15T01:29:11.149Z">
+<meta property="og:updated_time" content="2019-07-15T01:59:58.801Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Maven学习笔记">
 <meta name="twitter:description" content="maven概念maven是基于对象模型，可以通过一小段描述信息来管理项目的构建、报告和文档的软件项目管理工具，提供了仓库的概念，统一管理项目用到的jar包。 maven目录结构12345678src	-main		-java 			-package(自定义的包)	-test		-java			-package(自定义的包)	resources  编译时错误修正Source option 5 is">
@@ -305,7 +305,9 @@
 <h2 id="编译时错误修正"><a href="#编译时错误修正" class="headerlink" title="编译时错误修正"></a>编译时错误修正</h2><h3 id="Source-option-5-is-no-longer-supported-Use-7-or-later"><a href="#Source-option-5-is-no-longer-supported-Use-7-or-later" class="headerlink" title="Source option 5 is no longer supported. Use 7 or later."></a>Source option 5 is no longer supported. Use 7 or later.</h3><p>需要设置maven一些属性</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--Maven 属性--&gt;</span><br><span class="line">    &lt;properties&gt;</span><br><span class="line">        &lt;!--项目的编码格式--&gt;</span><br><span class="line">        &lt;project.build.sourceEncoding&gt;UTF-8&lt;/project.build.sourceEncoding&gt;</span><br><span class="line">        &lt;!-- maven 编译资源 版本 --&gt;</span><br><span class="line">        &lt;maven.compiler.source&gt;1.8&lt;/maven.compiler.source&gt;</span><br><span class="line">        &lt;!-- maven 编译目标版本  --&gt;</span><br><span class="line">        &lt;maven.compiler.target&gt;1.8&lt;/maven.compiler.target&gt;</span><br><span class="line">        &lt;!-- maven 编译插件版本 --&gt;</span><br><span class="line">        &lt;maven.compiler.compilerVersion&gt;1.8&lt;/maven.compiler.compilerVersion&gt;</span><br><span class="line">    &lt;/properties&gt;</span><br></pre></td></tr></table></figure>
 
+<h2 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">mvn	-v 查看maven版本</span><br><span class="line">	compile 编译</span><br><span class="line">	<span class="built_in">test</span>	测试</span><br><span class="line">	package	打包</span><br><span class="line">	</span><br><span class="line">	clean	删除target</span><br><span class="line">	install	安装jar包到本地仓库中</span><br></pre></td></tr></table></figure>
 
+<h2 id="maven构建流程"><a href="#maven构建流程" class="headerlink" title="maven构建流程"></a>maven构建流程</h2>
       
     </div>
     
@@ -451,7 +453,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#maven概念"><span class="nav-number">1.</span> <span class="nav-text">maven概念</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#maven目录结构"><span class="nav-number">2.</span> <span class="nav-text">maven目录结构</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#编译时错误修正"><span class="nav-number">3.</span> <span class="nav-text">编译时错误修正</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Source-option-5-is-no-longer-supported-Use-7-or-later"><span class="nav-number">3.1.</span> <span class="nav-text">Source option 5 is no longer supported. Use 7 or later.</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#maven概念"><span class="nav-number">1.</span> <span class="nav-text">maven概念</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#maven目录结构"><span class="nav-number">2.</span> <span class="nav-text">maven目录结构</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#编译时错误修正"><span class="nav-number">3.</span> <span class="nav-text">编译时错误修正</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Source-option-5-is-no-longer-supported-Use-7-or-later"><span class="nav-number">3.1.</span> <span class="nav-text">Source option 5 is no longer supported. Use 7 or later.</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常用命令"><span class="nav-number">4.</span> <span class="nav-text">常用命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#maven构建流程"><span class="nav-number">5.</span> <span class="nav-text">maven构建流程</span></a></li></ol></div>
             
 
           </div>
