@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="MySQL配置文件地址1/etc/mysql/my.conf.d/mysqld.cnf  在[mysqld]下方空白处添加以下代码12345init_connect=&apos;SET collation_connection = utf8_unicode_ci&apos;init_connect=&apos;SET NAMES utf8&apos;character-set-server=utf8collation-server=ut">
+<meta name="description" content="maven概念maven是基于对象模型，可以通过一小段描述信息来管理项目的构建、报告和文档的软件项目管理工具，提供了仓库的概念，统一管理项目用到的jar包。 maven目录结构src    -main        -java            -package(自定义的包)    -test        -java            -package(自定义的包)    resourc">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Ubuntu下设置MySql字符集为utf8">
-<meta property="og:url" content="http://yoursite.com/2019/07/13/hello-world/index.html">
+<meta property="og:title" content="Maven学习笔记">
+<meta property="og:url" content="http://yoursite.com/2019/07/14/maven笔记/index.html">
 <meta property="og:site_name" content="父亲写的散文诗">
-<meta property="og:description" content="MySQL配置文件地址1/etc/mysql/my.conf.d/mysqld.cnf  在[mysqld]下方空白处添加以下代码12345init_connect=&apos;SET collation_connection = utf8_unicode_ci&apos;init_connect=&apos;SET NAMES utf8&apos;character-set-server=utf8collation-server=ut">
+<meta property="og:description" content="maven概念maven是基于对象模型，可以通过一小段描述信息来管理项目的构建、报告和文档的软件项目管理工具，提供了仓库的概念，统一管理项目用到的jar包。 maven目录结构src    -main        -java            -package(自定义的包)    -test        -java            -package(自定义的包)    resourc">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-07-15T01:25:32.076Z">
+<meta property="og:updated_time" content="2019-07-15T01:15:15.009Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Ubuntu下设置MySql字符集为utf8">
-<meta name="twitter:description" content="MySQL配置文件地址1/etc/mysql/my.conf.d/mysqld.cnf  在[mysqld]下方空白处添加以下代码12345init_connect=&apos;SET collation_connection = utf8_unicode_ci&apos;init_connect=&apos;SET NAMES utf8&apos;character-set-server=utf8collation-server=ut">
+<meta name="twitter:title" content="Maven学习笔记">
+<meta name="twitter:description" content="maven概念maven是基于对象模型，可以通过一小段描述信息来管理项目的构建、报告和文档的软件项目管理工具，提供了仓库的概念，统一管理项目用到的jar包。 maven目录结构src    -main        -java            -package(自定义的包)    -test        -java            -package(自定义的包)    resourc">
 
 
 
@@ -119,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/07/13/hello-world/">
+  <link rel="canonical" href="http://yoursite.com/2019/07/14/maven笔记/">
 
 
 
 
 
-  <title>Ubuntu下设置MySql字符集为utf8 | 父亲写的散文诗</title>
+  <title>Maven学习笔记 | 父亲写的散文诗</title>
   
 
 
@@ -232,7 +232,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/13/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/14/maven笔记/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="仇昭焜">
@@ -249,7 +249,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Ubuntu下设置MySql字符集为utf8</h1>
+          <h1 class="post-title" itemprop="name headline">Maven学习笔记</h1>
         
 
         <div class="post-meta">
@@ -261,8 +261,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-07-13T18:58:44+08:00">
-                2019-07-13
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-07-14T15:24:38+08:00">
+                2019-07-14
               </time>
             
 
@@ -299,9 +299,10 @@
       
 
       
-        <h2 id="MySQL配置文件地址"><a href="#MySQL配置文件地址" class="headerlink" title="MySQL配置文件地址"></a>MySQL配置文件地址</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/etc/mysql/my.conf.d/mysqld.cnf</span><br></pre></td></tr></table></figure>
-
-<h2 id="在-mysqld-下方空白处添加以下代码"><a href="#在-mysqld-下方空白处添加以下代码" class="headerlink" title="在[mysqld]下方空白处添加以下代码"></a>在[mysqld]下方空白处添加以下代码</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">init_connect=<span class="string">'SET collation_connection = utf8_unicode_ci'</span></span><br><span class="line">init_connect=<span class="string">'SET NAMES utf8'</span></span><br><span class="line">character-set-server=utf8</span><br><span class="line">collation-server=utf8_unicode_ci</span><br><span class="line">skip-character-set-client-handshake</span><br></pre></td></tr></table></figure>
+        <h2 id="maven概念"><a href="#maven概念" class="headerlink" title="maven概念"></a>maven概念</h2><p>maven是基于对象模型，可以通过一小段描述信息来管理项目的构建、报告和文档的软件项目管理工具，提供了仓库的概念，统一管理项目用到的jar<br>包。</p>
+<h2 id="maven目录结构"><a href="#maven目录结构" class="headerlink" title="maven目录结构"></a>maven目录结构</h2><p>src<br>    -main<br>        -java<br>            -package(自定义的包)<br>    -test<br>        -java<br>            -package(自定义的包)<br>    resources</p>
+<h2 id="编译时错误修正"><a href="#编译时错误修正" class="headerlink" title="编译时错误修正"></a>编译时错误修正</h2><h3 id="Source-option-5-is-no-longer-supported-Use-7-or-later"><a href="#Source-option-5-is-no-longer-supported-Use-7-or-later" class="headerlink" title="Source option 5 is no longer supported. Use 7 or later."></a>Source option 5 is no longer supported. Use 7 or later.</h3><p>需要设置maven一些属性</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--Maven 属性--&gt;</span><br><span class="line">    &lt;properties&gt;</span><br><span class="line">        &lt;!--项目的编码格式--&gt;</span><br><span class="line">        &lt;project.build.sourceEncoding&gt;UTF-8&lt;/project.build.sourceEncoding&gt;</span><br><span class="line">        &lt;!-- maven 编译资源 版本 --&gt;</span><br><span class="line">        &lt;maven.compiler.source&gt;1.8&lt;/maven.compiler.source&gt;</span><br><span class="line">        &lt;!-- maven 编译目标版本  --&gt;</span><br><span class="line">        &lt;maven.compiler.target&gt;1.8&lt;/maven.compiler.target&gt;</span><br><span class="line">        &lt;!-- maven 编译插件版本 --&gt;</span><br><span class="line">        &lt;maven.compiler.compilerVersion&gt;1.8&lt;/maven.compiler.compilerVersion&gt;</span><br><span class="line">    &lt;/properties&gt;</span><br></pre></td></tr></table></figure>
 
 
       
@@ -327,15 +328,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2019/07/13/hello-world/" rel="next" title="Ubuntu下设置MySql字符集为utf8">
+                <i class="fa fa-chevron-left"></i> Ubuntu下设置MySql字符集为utf8
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/07/14/maven笔记/" rel="prev" title="Maven学习笔记">
-                Maven学习笔记 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -449,7 +450,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#MySQL配置文件地址"><span class="nav-number">1.</span> <span class="nav-text">MySQL配置文件地址</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#在-mysqld-下方空白处添加以下代码"><span class="nav-number">2.</span> <span class="nav-text">在[mysqld]下方空白处添加以下代码</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#maven概念"><span class="nav-number">1.</span> <span class="nav-text">maven概念</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#maven目录结构"><span class="nav-number">2.</span> <span class="nav-text">maven目录结构</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#编译时错误修正"><span class="nav-number">3.</span> <span class="nav-text">编译时错误修正</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Source-option-5-is-no-longer-supported-Use-7-or-later"><span class="nav-number">3.1.</span> <span class="nav-text">Source option 5 is no longer supported. Use 7 or later.</span></a></li></ol></li></ol></div>
             
 
           </div>
