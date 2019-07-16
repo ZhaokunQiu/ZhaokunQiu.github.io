@@ -229,6 +229,128 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/15/秒杀平台项目记录/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="仇昭焜">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="父亲写的散文诗">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/07/15/秒杀平台项目记录/" itemprop="url">秒杀平台项目记录</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-07-15T18:01:39+08:00">
+                2019-07-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="Java日志"><a href="#Java日志" class="headerlink" title="Java日志"></a>Java日志</h2><p>slf4j，log4j，logback，common-logging </p>
+<p><strong>slf4j 是规范/接口</strong></p>
+<p><strong>日志实现</strong>：log4j，logback，common-logging </p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/14/maven笔记/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -311,14 +433,22 @@
 <h2 id="maven创建目录两种方式"><a href="#maven创建目录两种方式" class="headerlink" title="maven创建目录两种方式"></a>maven创建目录两种方式</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">mvn	archetype:generate	利用archetype交互式创建项目目录骨架</span><br><span class="line">	archetype:generate	-DgroupId=组织名+项目名</span><br><span class="line">						-DartifactId=项目名+模块名</span><br><span class="line">						-Dversion=版本号</span><br><span class="line">						-Dpackage=代码所在包名</span><br></pre></td></tr></table></figure>
 
 <h2 id="仓库"><a href="#仓库" class="headerlink" title="仓库"></a>仓库</h2><p>分为本地仓库和远程仓库</p>
-<p>镜像仓库（放置GFW屏蔽）<br>在maven安装目录下的conf/settings.xml中mirror，id、mirrorOf和name可以按需求填，url填国内镜像仓库地址<br>例如 <a href="http://maven.net.cn/content/groups/public" target="_blank" rel="noopener">http://maven.net.cn/content/groups/public</a> </p>
+<p>镜像仓库（放置GFW屏蔽）</p>
+<p>在maven安装目录下的conf/settings.xml中mirror，id、mirrorOf和name可以按需求填，url填国内镜像仓库地址</p>
+<p>例如 <a href="http://maven.net.cn/content/groups/public" target="_blank" rel="noopener">http://maven.net.cn/content/groups/public</a> </p>
 <p>修改本地仓库也在上述文件中，localRepository属性</p>
-<h2 id="maven生命周期"><a href="#maven生命周期" class="headerlink" title="maven生命周期"></a>maven生命周期</h2><h3 id="clean-清理项目"><a href="#clean-清理项目" class="headerlink" title="clean    清理项目"></a>clean    清理项目</h3><p>pre-clean    执行清理前的工作<br>clean        清理上一次构建生成的所有文件<br>post-clean    执行清理后的文件</p>
+<h2 id="maven生命周期"><a href="#maven生命周期" class="headerlink" title="maven生命周期"></a>maven生命周期</h2><h3 id="clean-清理项目"><a href="#clean-清理项目" class="headerlink" title="clean    清理项目"></a>clean    清理项目</h3><p>pre-clean    执行清理前的工作</p>
+<p>clean        清理上一次构建生成的所有文件</p>
+<p>post-clean    执行清理后的文件</p>
 <h3 id="default-构建项目（最核心）"><a href="#default-构建项目（最核心）" class="headerlink" title="default    构建项目（最核心）"></a>default    构建项目（最核心）</h3><p>常用：compile test package install</p>
-<h3 id="site-生成项目站点"><a href="#site-生成项目站点" class="headerlink" title="site    生成项目站点"></a>site    生成项目站点</h3><p>pre-site    在生成项目站点前要完成的工作<br>site        生成项目的站点文档<br>post-site    在生成项目站点后要完成的工作<br>site-deploy    发布生成的站点到服务器上</p>
-<h2 id="maven依赖冲突原则"><a href="#maven依赖冲突原则" class="headerlink" title="maven依赖冲突原则"></a>maven依赖冲突原则</h2><h3 id="短路优先"><a href="#短路优先" class="headerlink" title="短路优先"></a>短路优先</h3><p><code>A-&gt;B-&gt;C-&gt;X(jar)
-A-&gt;D-&gt;X(jar)</code><br><code>选择第二种</code></p>
-<h3 id="路径长度相同先声明优先"><a href="#路径长度相同先声明优先" class="headerlink" title="路径长度相同先声明优先"></a>路径长度相同先声明优先</h3>
+<h3 id="site-生成项目站点"><a href="#site-生成项目站点" class="headerlink" title="site    生成项目站点"></a>site    生成项目站点</h3><p>pre-site    在生成项目站点前要完成的工作</p>
+<p>site        生成项目的站点文档</p>
+<p>post-site    在生成项目站点后要完成的工作</p>
+<p>site-deploy    发布生成的站点到服务器上</p>
+<h2 id="maven依赖冲突原则"><a href="#maven依赖冲突原则" class="headerlink" title="maven依赖冲突原则"></a>maven依赖冲突原则</h2><h3 id="1-短路优先"><a href="#1-短路优先" class="headerlink" title="1.短路优先"></a>1.短路优先</h3><p><strong>A-&gt;B-&gt;C-&gt;X(jar)</strong></p>
+<p><strong>A-&gt;D-&gt;X(jar)</strong></p>
+<p><code>选择第二种</code></p>
+<h3 id="2-路径长度相同先声明优先"><a href="#2-路径长度相同先声明优先" class="headerlink" title="2.路径长度相同先声明优先"></a>2.路径长度相同先声明优先</h3>
           
         
       
@@ -522,7 +652,7 @@ A-&gt;D-&gt;X(jar)</code><br><code>选择第二种</code></p>
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
